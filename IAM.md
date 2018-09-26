@@ -1,7 +1,8 @@
 # IAM
+
 IAM or Identity Access Management is used by AWS to create user, groups and roles.
 
-The IAM service is global meaing it has no region.
+The IAM service is global meaning it has no region.
 
 AWS creates a root account when you first create your AWS account. The root account should only be used when needed and not day to day.
 
@@ -9,11 +10,12 @@ You can enable two factor authentication on all accounts created within IAM and 
 
 When creating user accounts, users can access AWS in two ways. Either via the console or the API/command line tool set. If accessing via the API/command line you will need the access key ID and secret access key which are created at user creation. If you forget these you will need to re-issue them, however the original keys will no longer work.
 
-Roles are used to give permissions to entities that you trust. An entitiy can be either a user or another AWS service.
+Roles are used to give permissions to entities that you trust. An entity can be either a user or another AWS service.
 
 Roles are made up of policies which are even defined by the user or by the ones created by AWS. Policy documents are in JSON format. Two policies which seem similar are the AdministratorAccess and SystemAdministrator policy. There are however differences between the two. AdministratorAccess is the same level as the root account whereas the SystemAdministrator role is more defined:
 
 AdministratorAccess:
+
 ```json
 {
     "Version": "2012-10-17",
@@ -26,7 +28,9 @@ AdministratorAccess:
     ]
 }
 ```
-SystemAdministrator (list has been shortend):
+
+SystemAdministrator (list has been shortened):
+
 ```json
 {
     "Version": "2012-10-17",
